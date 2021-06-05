@@ -1,7 +1,7 @@
 #Varejo_spa
 
 Projeto Varejo SPA, desenvolvido de forma incremental utilizando as tecnologias: HTML, CSS e Javascript.
-
+Projeto responsivo
 
 
 O que sua aplicação deverá fazer
