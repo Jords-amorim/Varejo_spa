@@ -10,67 +10,74 @@
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
-        <img src="" alt="Imagem Logomarca">
+        <img src="./images/iconheader.png" alt="Imagem Logomarca">
         <h1>Controle financeiro</h1>
         <nav>
             <a href="/">Limpar dados</a>
             <a href="/">Cadastro de transações</a>
             <a href="/">Salvar no servidor</a>
         </nav>
+        <div class="menu-hamburguer">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Nova Transação</h2>
+            <h2 class="newTransaction">Nova Transação</h2>
             <form>
-                <label for="">Tipo de Transação</label><br>
+                <label for="">Tipo de Transação</label>
                 <select name="" id="">
                     <option value="">Compra</option>
                     <option value="">Venda</option>
-                </select><br>
-                <label for="">Nome da mercadoria</label><br>
-                <input placeholder="input"><br>
-                <label for="">Valor</label><br>
-                <input placeholder="R$ 0,00"><br>
+                </select>
+                <label for="">Nome da mercadoria</label>
+                <input placeholder="Input">
+                <label for="">Valor</label>
+                <input placeholder="R$ 0,00">
                 <button>Adicionar Transação</button>
             </form>
         </section>
         <section>
             <h2>Extrato de transações</h2>
             <div>
-                <div>
+                <div class="inline-block">
                     <p class="bold">Mercadoria</p>
                     <p class="bold">Valor</p>
                 </div>
                 <hr>
-                <div>
+                <div class="inline-block">
                     <p>+</p>
                     <p>Lorem ipsum dolor sit amet</p>
                     <p>R$ 12.999,99</p>
                 </div>
                 <hr>
-                <div>
+                <div class="inline-block">
                     <p>-</p>
                     <p>Quis nostrud exercitation</p>
                     <p>R$ 99,99</p>
                 </div>
                 <hr>
-                <div>
+                <div class="inline-block">
                     <p>+</p>
                     <p>Lorem ipsum</p>
                     <p>R$ 9,99</p>
                 </div>
                 <hr>
                 <hr>
-                <div>
+                <div class="inline-block">
                     <p class="bold">Total</p>
                     <p class="bold">R$ 12.909,99</p>
                 </div>
-                <p>[lucro]</p>
+                <p class="lucro">[LUCRO]</p>
             </div>
         </section>
     </main>
