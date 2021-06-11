@@ -1,5 +1,3 @@
-/* Definição Variáveis */
-
  :root {
     --bg-gray1: #E0E0E0;
     --bg-gray2: #C4C4C4;
@@ -9,13 +7,7 @@
     --dark: #333333;
     --white: #FFFFFF;
     --black: #000000;
-    /*  --shadow:
-    0 2px 23px 0 rgba(0, 0, 0, 0.1),
-    0 2px 49px 0 rgba(0, 0, 0, 0.06); */
 }
-
-
-/* Seletor Universal */
 
 * {
     margin: 0;
@@ -23,6 +15,9 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     line-height: 22px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
     
 }
 
@@ -30,13 +25,9 @@ input, button {
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 14px;
+main {
     width: 100%;
-    -webkit-font-smoothing: antialiased;
+    padding: 15px 27px;
 }
 
 h1 {
@@ -46,9 +37,85 @@ h1 {
 
 h2 {
     font-size: 18px;
-    display: flex;
-    justify-content: center;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-white);
+    height: 60px;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 0px 24px;
+    }
+}
+
+header img {
+    width: 39px;
+}
+
+.iconHamburguer div {
+    height: 5px;
+    background-color: var(--dark);
+    width: 35px;
+    margin: 6px 0;
+}
+
+.responsiveMenu ul {
+    display: none;
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 16px;
+    position: fixed;
+    height: 100%;
+    width: 85.4%;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+}
+
+@media(min-width: 767px) {
+    .responsiveMenu ul {
+        width: 32.4%;
+
+    }
+}
+
+.responsiveMenu ul li {
+    text-align: right;
+    margin: 7px 0;
+    padding: 0 20px;
+}
+
+.responsiveMenu ul li:nth-child(1) {
+    text-align: left;
+}
+
+.responsiveMenu ul li:hover {
+    background-color: var(--bg-gray2);
+    color: var(--dark);
+}
+
+.responsiveMenu:hover ul {
+    display: block;
+}
+
+section h2 {
+    text-align: center;
+}
+
+@media(max-width: 767px) {
+    .newTransaction {
+        display: none;
+    }
+}
+
+
 
 select, input {
     height: 32px;
@@ -65,25 +132,28 @@ section form {
     margin-bottom: 41px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: var(--bg-white);
-    height: 60px;
-    width: 100%;
-}
-
-.menu-hamburguer div {
-    height: 2px;
-    background-color: var(--dark);
-    width: 18px;
-    
-}
-
-@media (max-width: 1111px) {
-    nav {
-        display: none;
+@media(min-width: 767px) {
+   section form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-bottom: none;
+      margin-bottom: 0px;
     }
+}
+
+@media(min-width: 767px) {
+    main section:nth-child(1) {
+        border: 1px solid #979797;
+        border-radius: 4px;
+        padding: 20px;
+    }
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .inline-block {
@@ -93,39 +163,26 @@ header {
     padding: 10px;
 }
 
-.bold {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* hr {
-    margin-top: 8px;
-} */
-
-main {
-    width: 100%;
-    padding: 20px;
-}
-
-@media(max-width: 765px) {
-    .newTransaction {
-        display: none;
-    }
-}
-
-label {
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
 button {
     background-color: var(--dark);
     color: var(--white);
     margin: 15px 0;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
     height: 32px;
     border: none;
     border-radius: 4px;
+}
+
+@media(min-width: 767px) {
+    button {
+        width: 200px;
+        margin-bottom: 0;
+    }
+}
+
+.bold {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .lucro {
