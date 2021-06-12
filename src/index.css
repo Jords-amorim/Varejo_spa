@@ -33,11 +33,15 @@ h2 {
 }
 
 /* Mobile */
-
-header {
+.menuContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
+    width: 91%;
+    margin: auto;
+}
+header {
     background-color: var(--bg-white);
     height: 60px;
     width: 100%;
@@ -113,7 +117,7 @@ section form {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #979797;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
 }
 
 label {
@@ -138,7 +142,6 @@ button {
 
 table {
     width: 100%;
-    padding: 0 10px;
 }
 
 
@@ -158,7 +161,8 @@ td {
     line-height: 16px;
 }
 .colRight {
-   padding-right: 15px;
+   padding-right: 30px;
+   text-align: end;
 } 
 
 tr td:nth-child(1) {
@@ -174,6 +178,7 @@ tr td:nth-child(2) {
 tr td:nth-child(3) {
     min-width: 90px;
     text-align: right;
+    padding-right: 10px;
 }
 
 .inline-block {
@@ -181,6 +186,7 @@ tr td:nth-child(3) {
     align-items: center;
     justify-content: space-between;
     padding: 0 11px;
+    margin-top: 11px;
 }
 
 .bold {
