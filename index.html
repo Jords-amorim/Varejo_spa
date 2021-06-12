@@ -28,9 +28,9 @@
                 </div>
                 <ul>
                     <li>X</li>
-                    <li >Limpar dados</li>
-                    <li >Cadastro de transações</li>
-                    <li >Salvar no servidor</li>
+                    <li>Limpar dados</li>
+                    <li>Cadastro de transações</li>
+                    <li>Salvar no servidor</li>
                 </ul>
             </div>
         </header>
@@ -38,51 +38,58 @@
             <section>
                 <h2 class="newTransaction">Nova Transação</h2>
                 <form>
-                    <label for="">Tipo de Transação</label>
-                    <select name="" id="">
-                        <option value="">Compra</option>
-                        <option value="">Venda</option>
-                    </select>
-                    <label for="">Nome da mercadoria</label>
-                    <input placeholder="Input">
-                    <label for="">Valor</label>
-                    <input placeholder="R$ 0,00">
+                    <div>
+                        <label for="">Tipo de Transação</label>
+                        <select name="" id="">
+                            <option value="">Compra</option>
+                            <option value="">Venda</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Nome da mercadoria</label>
+                        <input placeholder="Input">
+                    </div>
+                    <div>
+                        <label for="">Valor</label>
+                        <input placeholder="R$ 0,00">
+                    </div>
                     <button>Adicionar Transação</button>
                 </form>
             </section>
             <section>
-                <h2>Extrato de transações</h2>
-                <div>
-                    <div class="inline-block">
-                        <p class="bold">Mercadoria</p>
-                        <p class="bold">Valor</p>
-                    </div>
-                    <hr>
-                    <div class="inline-block">
-                        <p>+</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>R$ 12.999,99</p>
-                    </div>
-                    <hr>
-                    <div class="inline-block">
-                        <p>-</p>
-                        <p>Quis nostrud exercitation</p>
-                        <p>R$ 99,99</p>
-                    </div>
-                    <hr>
-                    <div class="inline-block">
-                        <p>+</p>
-                        <p>Lorem ipsum</p>
-                        <p>R$ 9,99</p>
-                    </div>
-                    <hr>
-                    <hr>
-                    <div class="inline-block">
-                        <p class="bold">Total</p>
-                        <p class="bold">R$ 12.909,99</p>
-                    </div>
-                    <p class="lucro">[LUCRO]</p>
+                <h2 class="extract">Extrato de transações</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th class="bold">Mercadoria</th>
+                        <th class="bold colRight">Valor</th>
+                    </tr>
+                    <tr><td class="borderLine" colspan="3"></td></tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Lorem ipsum dolor sit amet consectetur</td>
+                        <td>R$ 12.999,99</td>
+                    </tr>
+                    <tr><td class="borderLine" colspan="3"></td></tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Quis nostrud exercitation</td>
+                        <td>R$ 99,99</td>
+                    </tr>
+                    <tr><td class="borderLine" colspan="3"></td></tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Lorem ipsum</td>
+                        <td>R$ 9,99</td>
+                    </tr>
+                    <tr><td class="borderLine" colspan="3"></td></tr>
+                    <tr><td class="borderLine" colspan="3"></td></tr>
+                </table>
+                <div class="inline-block">
+                    <p class="bold">Total</p>
+                    <p class="bold">R$ 12.909,99</p>
                 </div>
+                <p class="lucro">[LUCRO]</p>
             </section>
         </main>
     </div>
