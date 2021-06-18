@@ -127,6 +127,7 @@ label {
 }
 
 button {
+    width: 100%;
     background-color: var(--dark);
     color: var(--white);
     margin: 15px 0;
@@ -208,43 +209,52 @@ tr td:nth-child(3) {
         justify-content: space-between;
         padding: 0px 24px;
     }
-} 
 
-@media(min-width: 767px) {
     .newTransaction {
         display: block;
     }
-}
 
-@media(min-width: 767px) {
     .responsiveMenu ul {
         width: 32.4%;
 
     }
-}
 
-@media(min-width: 767px) {
     button {
         width: 200px;
         margin-bottom: 0;
     }
-}
 
-@media(min-width: 767px) {
     main section:nth-child(1) {
         border: 1px solid #979797;
         border-radius: 4px;
         padding: 20px;
     }
-}
 
-@media(min-width: 767px) {
     section form {
-       display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       border-bottom: none;
-       margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: none;
+        margin-bottom: 0px;
+        align-items: flex-end;
+      }
+
+     .formContainer {
+         width: 100%;
+         display: flex;
+         align-items: center;
      }
- }
+    
+    .forMercadoria {
+        width: 55%;
+        margin: 0 20px;
+    }
+
+    .forItem {
+        width: 22%;
+    }
+
+    .extract {
+        margin-top: 41px;
+    }
+} 
+
