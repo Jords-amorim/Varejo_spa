@@ -38,7 +38,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 91%;
+    width: 100%;
+    padding: 0 20px;
     margin: auto;
 }
 header {
@@ -93,7 +94,7 @@ header img {
 
 main {
     width: 100%;
-    padding: 15px 20px;
+    padding: 26px 20px;
 }
 
 section h2 {
@@ -145,7 +146,6 @@ table {
     width: 100%;
 }
 
-
 .borderLine {
     border-bottom: 1px solid #979797;
     padding: 0;
@@ -161,6 +161,7 @@ td {
     vertical-align: top;
     line-height: 16px;
 }
+
 .colRight {
    padding-right: 30px;
    text-align: end;
@@ -206,8 +207,12 @@ tr td:nth-child(3) {
 
 @media(min-width: 768px) {
     header {
-        justify-content: space-between;
-        padding: 0px 24px;
+        padding: 0;
+    }
+
+    .menuContainer {
+        width: 100%;
+        padding: 0 20px;
     }
 
     .newTransaction {
@@ -258,3 +263,109 @@ tr td:nth-child(3) {
     }
 } 
 
+/*  Tablet portrait 1112px */
+@media(min-width: 1112px) {
+    .iconHamburguer {
+        display: none;
+    }
+
+    .menuContainer {
+        width: 100%;
+    }
+
+    header {
+        padding: 0px 24px;
+    }
+
+    header img {
+        margin-right: 20px;
+    }
+
+    h1 {
+        margin-right: auto;
+    }
+
+    .responsiveMenu {
+        background-color: var(--white);
+        height: 40px;
+        width: 45%;
+    }
+
+    .responsiveMenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: var(--dark);
+        background-color: var(--white);
+        width: 100%;
+        padding: 0;
+    }
+
+    .responsiveMenu:hover ul {
+        display: flex;
+    }
+
+    .responsiveMenu li:nth-child(1) {
+        display: none;
+    }
+
+    .responsiveMenu ul li {
+        margin: auto;
+        text-align: center;
+       /*  padding: 0; */
+       border-left: 1px solid var(--dark);
+       white-space: nowrap;
+    }
+
+    .responsiveMenu li:nth-child(2) {
+        border-left: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    main section:nth-child(1) {
+        width: 35%;
+    }
+
+    main section:nth-child(2) {
+        width: 65%;
+        margin-left: 20px;
+    }
+    
+    .forItem , .forMercadoria {
+        width: 100%;
+        margin: auto;
+    }
+
+    .formContainer {
+        display: block;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    button {
+        width: inherit;
+    }
+}
+
+/* Desktop 1550px */
+@media(min-width: 1550px) {
+    main {
+        padding: 30px 200px;
+    }
+
+    .menuContainer {
+        width: 100%;
+        padding: 0 200px;
+    }
+
+    header {
+        padding: 0;
+    }
+}
